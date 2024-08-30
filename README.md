@@ -1,36 +1,58 @@
-Spam Classifier
-Overview
+#Spam Classifier#
+
+#Overview
+
 This project involves creating a spam classifier using a dataset of spam messages. The classifier distinguishes between spam and non-spam messages using various machine learning models. The performance of each model is evaluated based on accuracy and precision, and results are visualized using plots.
 
 Project Structure
+
 data/: Contains the dataset file (spam.csv).
+
 notebooks/: Jupyter notebooks for data exploration, model training, and evaluation.
+
 scripts/: Python scripts for preprocessing, model training, and evaluation.
+
 results/: Plots and evaluation results.
-Requirements
+
+#Requirements
+
 Python 3.x
+
 pandas
+
 numpy
+
 scikit-learn
+
 matplotlib
+
 seaborn
+
 nltk (for natural language processing)
+
 xgboost (if used)
+
 You can install the required packages using:
 
-bash
-Copy code
+
 pip install pandas numpy scikit-learn matplotlib seaborn nltk xgboost
-Dataset
+
+#Dataset
 The dataset used in this project is spam.csv, which contains spam and non-spam messages. The data is structured as follows:
 
 text: The content of the message.
+
 label: The label indicating whether the message is spam or not.
+
 Data Preprocessing
+
 Loading Data: Loaded the dataset and performed initial exploration.
+
 Text Processing: Tokenized the text, removed stop words, and performed stemming.
+
 Feature Extraction: Converted text data into numerical features using techniques such as Count Vectorization or TF-IDF.
 Models
+
 The following classifiers were used in this project:
 
 Logistic Regression
